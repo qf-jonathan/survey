@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>test</title>
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
     </head>
     <style>
         html, body {
@@ -65,9 +66,31 @@
             padding: 0 110px;
         }
 
-        .content > .alternativas {
-            padding: 0 110px;
+        .content > .alternativas{
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        flex-wrap: wrap;
         }
+
+       .content >.alternativas > .alter{
+       	width: 360px;
+		height: 46px;
+		left: 209px;
+		top: 396px;
+		margin: 10px;
+		padding: 5px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 5px rgba(8, 8, 8, 0.25);
+		border-radius: 2px;
+		text-align: left;
+        font-family: Rasa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color:var(--primary-color);
+       }
 
         .boton {
             outline: none;
@@ -89,11 +112,12 @@
                 <div class="enunciado column">
                     <span>Enunciado</span>
                 </div>
-                <div class="alternativas expand">
-                    <div>alternativa 1</div>
-                    <div>alternativa 2</div>
-                    <div>alternativa 3</div>
-                    <div>alternativa 4</div>
+                <div class="alternativas">
+                    <div class="alter"><input type=checkbox> Alternativa 1</div>
+                    <div class="alter"><input type=checkbox> Alternativa 2</div>
+                    <div class="alter"><input type=checkbox> Alternativa 3</div>
+                    <div class="alter"><input type=checkbox> Alternativa 4</div>
+                    <div class="alter"><input type=checkbox> ALTERNATIVA 5</div>
                 </div>
                 <div class="botones row">
                     <button class="boton">anterior</button>
