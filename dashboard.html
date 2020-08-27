@@ -73,49 +73,94 @@
             margin-left: 60px;
             margin-right: 60px;
         }
-        .container >.encuestas{
-        background:#F7F8FC;
-        position: relative;
-        width: 1366px;
-        height: 536px;
-        left: 0px;
-        top: 110px;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
+        .container >.encuestas {
+            background:#F7F8FC;
+            position: relative;
+            width: 1366px;
+            height: 536px;
+            left: 0px;
+            top: 110px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
         }
         .encuestas >.linea{
-        width: 1260px;
-        height: 0px;
-        left: 47px;
-        top: 60px;
-        border: 1px solid #000000;
+            position: relative;
+            width: 1260px;
+            height: 0px;
+            left: 47px;
+            top: 60px;
+            border: 1px solid #000000;
         }
-        .encuestas>.misencuestas{
-        width: 10px;
-        height: 200px;
-        margin: 60px;
+        .misencuestas{
+            position: relative;
+            width: 150px;
+            height: 165px;
+            margin-left: 100px;
+            top: 42px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 23px;
         }
         .itemses>div{
+            position: relative;
             display: flex;
-            justify-content: center;
-             width: 130px;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 130px;
             height: 150px;
-            margin: 30px;
+            top: 77px;
+            right: 70px;
+            margin: 35px;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(8, 8, 8, 0.25);
             border-radius: 10px;
         }
         .botoncitos{
- left: 24.08%;
-right: 23.56%;
-top: 63.23%;
-bottom: 25.56%;
-
-background: #3753FF;
-border-radius: 5px;
-color:white;
+            left: 24.08%;
+            right: 23.56%;
+            top: 63.23%;
+            bottom: 25.56%;
+            margin:5px;
+            background: var(--primary-color);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            color:white;
         }
+    .cross{
+      background:var(--primary-color);
+      text-indent: -999em;
+      width: 77px;
+      height: 77px;
+      box-sizing: content-box;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      border: 15px solid var(--primary-color);
+      border-bottom: 0;
+    }
+    .cross:before {
+      content: "/20";
+      position: absolute;
+      width: 68px;
+      top: 25px;
+      height:13px;
+      background: white;
+      right: 5px;
+      box-sizing: content-box;
+    }
+    .cross:after {
+      content: "/20";
+      position: absolute;
+      width: 15px;
+      top:3px;
+      height: 60px;
+      background: white;
+      right: 32px;
+      box-sizing: content-box;
+
+    }
     </style>
     <body>
         <div class="container column">
@@ -124,35 +169,38 @@ color:white;
                 <div >Survey</div>
                 <div><button class="boton-logout">LOG OUT</button></div>
             </div>
-            <div class="encuestas column ">
+            <div class="encuestas">
                 <div><span class="misencuestas"> Mis encuestas</span> </div>
                 <div class="linea"></div>
                 <div class="itemses row flex-end">
-                    <div class="column"><a href="#">Encuesta 5</a>
+                    <div>
+                        <div class="cross"></div>
+                    </div>
+                    <div class="column"><span>Encuesta 5</span>
                         <div class=" column">
                         <button class="botoncitos">Resultado</button>
                         <button class="botoncitos">Editar</button>
                         </div>
                     </div>
-                    <div class="column"><a href="#">Encuesta 4</a>
+                    <div class="column"><span>Encuesta 4</span>
                         <div class=" column">
                         <button class="botoncitos">Resultado</button>
                         <button class="botoncitos">Editar</button>
                         </div>
                     </div>
-                    <div class="column"><a href="#">Encuesta 3</a>
+                    <div class="column"><span>Encuesta 3</span>
                         <div class=" column">
                         <button class="botoncitos">Resultado</button>
                         <button class="botoncitos">Editar</button>
                         </div>
                     </div>
-                    <div class="column"><a href="#">Encuesta 2</a>
+                    <div class="column"><span>Encuesta 2</span>
                         <div class=" column">
                         <button class="botoncitos">Resultad1</button>
                         <button class="botoncitos">Editar</button>
                         </div>
                     </div>
-                    <div class="column"><a href="#">Encuesta 1</a>
+                    <div class="column"><span>Encuesta1 </span>
                         <div class=" column">
                         <button class="botoncitos">Resultado</button>
                         <button class="botoncitos">Editar</button>
